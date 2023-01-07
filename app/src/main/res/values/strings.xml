@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">League</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="check_your_internet_connection">Check your internet connection</string>
+</resources>

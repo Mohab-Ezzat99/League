@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="mrandroid.league.presentation.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/competitionFragment"
+        android:name="mrandroid.league.presentation.competition.CompetitionFragment"
+        android:label="CompetitionFragment"
+        tools:layout="@layout/fragment_competition" >
+        <argument
+            android:name="competitionId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="mrandroid.league.presentation.team.TeamFragment"
+        android:label="TeamFragment"
+        tools:layout="@layout/fragment_team" >
+        <argument
+            android:name="teamId"
+            app:argType="long" />
+    </fragment>
+</navigation>
